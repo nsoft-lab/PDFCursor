@@ -1,0 +1,22 @@
+PDFCursor License & Commercial Terms
+
+Copyright (c) 2026 NSoFT Co., Ltd. All rights reserved.
+
+1. License Types
+   - Trial Version (Free): All features are fully functional. Generated PDFs include
+     a "Trial Version" watermark. For evaluation and development testing.
+   - Personal License (One-time purchase): Removes the watermark. Valid for 1
+     production site (includes associated development/staging environments).
+     For individual developers and solo projects.
+   - Team / Enterprise License (One-time purchase): Removes the watermark. Valid
+     for 1 production site (includes associated development/staging environments).
+     For business, organization, or team-based development.
+
+2. License Scope & Terms
+   - 1 License = 1 Production Site: Each purchased license key grants permission
+     to use PDFCursor on one single production site or application.
+   - Development & Staging Included: Non-production environments associated with
+     the licensed production site (e.g., localhost, staging, or testing servers)
+     are included under the same single license.
+   - Multiple Production Sites: Deploying PDFCursor on additional production sites
+     requires purchasing a separate license for each site.
