@@ -11,8 +11,8 @@ const link = document.getElementById("link");
 const viewer = document.getElementById('viewer');
 
 function page1() {
-    pdc.beginPage("a4 landscape", {title:"page1-Text"});
-    pdc.font("Courier", 12)
+    pdc.beginPage("a4 landscape", {title:"page1-Text"})
+       .font("Courier", 12)
        .textAt(pdc.$W * 0.4, pdc.$H - 30, new Date().toLocaleString('sv-SE'));
     pdc.font("Helvetica-Bold", 22)
        .color({fill:"#1E3A8A"}) 
@@ -28,8 +28,8 @@ function page1() {
        .color(null)
        .font("Times-Roman", 13, {leading:1.2})
        .textAt(pdc.$x + 10, pdc.$y - 18,
-            "• Price: \u20AC125.50 / \xA399.99 / \xA515,000 (\xA9 2026 PDFCursor\u2122)"
-         +"\n• Accent: Fran\xE7ois & No\xEB1 visit K\xF8benhavn, M\xFCnchen & Z\xFCrich."
+            "\x95 Price: \u20AC125.50 / \xA399.99 / \xA515,000 (\xA9 2026 PDFCursor\u2122)"
+         +"\n\x95 Accent: Fran\xE7ois & No\xEB1 visit K\xF8benhavn, M\xFCnchen & Z\xFCrich."
        );
     //--- Sans-Serif
     pdc.font("Helvetica-Oblique", 11)
@@ -70,15 +70,15 @@ function page1() {
        .textAt(pdc.$x + 10, pdc.$y - 18, "\x33 ")
        .color({fill:"#DC2626"}) // (Cross)
        .textAdd("\x35 ")
-       .color({fill:"#D97706"}) // ✦ (Star: 0x38)
+       .color({fill:"#D97706"}) // (Star: 0x38)
        .textAdd("\x38 ")
-       .color({fill:"#E11D48"}) // ❤ (Heart: 0xAA)
+       .color({fill:"#E11D48"}) // (Heart: 0xAA)
        .textAdd("\xAA ")
-       .color({fill:"#2563EB"}) // ➔ (Arrow: 0xD4)
+       .color({fill:"#2563EB"}) // (Arrow: 0xD4)
        .textAdd("\xD4 ")
-       .color({fill:"#7C3AED"}) // ✏ (Pencil: 0x27)
+       .color({fill:"#7C3AED"}) // (Pencil: 0x27)
        .textAdd("\x30 ")
-       .color({fill:"#0891B2"}) // ④ (Circled 4: 0xCD)
+       .color({fill:"#0891B2"}) // (Circled 4: 0xCD)
        .textAdd("\xCD");
     //--- CJK
     pdc.font("Helvetica-Oblique", 11)
@@ -251,8 +251,8 @@ const shd2 = pdc.shadeRef(["#fff", "#7f00ff", "#00f", "#0ff"
                         , {geom:[0, 0, 1, 0, 0, 1.4], extS:false, extE:false});
 
 function page2() {
-    pdc.beginPage("a4 landscape", {title:"page2-Graphics"});
-    pdc.font("Courier", 12)
+    pdc.beginPage("a4 landscape", {title:"page2-Graphics"})
+       .font("Courier", 12)
        .textAt(pdc.$W * 0.4, pdc.$H - 30, new Date().toLocaleString('sv-SE'));
     pdc.font("Helvetica-Bold", 22)
        .color({fill:"#1E3A8A"}) 
