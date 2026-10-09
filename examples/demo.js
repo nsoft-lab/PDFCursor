@@ -48,9 +48,9 @@ function page1() {
        .color(null)
        .font("Courier", 11, {leading:1.0})
        .textAt(pdc.$x + 10, pdc.$y - 16, 
-            "0x0000: 41 42 43 44  45 46 47 48 |ABCD EFGH|"
-         +"\n0x0010: 80 82 83 84  A1 A2 A3 A4 |\u20AC\u201A\u0192\u201E \xA1\xA2\xA3\xA4|"
-         +"\n0x0020: A9 AA AB AC  AE B0 B1 B7 |\xA9\xAA\xAB\xAC \xAE\xB0\xB1\xB7|"
+            "0x0100: 41 42 43 44  45 46 47 48 |ABCD EFGH|"
+         +"\n0x0108: 80 82 83 84  A1 A2 A3 A4 |\u20AC\u201A\u0192\u201E \xA1\xA2\xA3\xA4|"
+         +"\n0x0110: A9 AA AB AC  AE B0 B1 B7 |\xA9\xAA\xAB\xAC \xAE\xB0\xB1\xB7|"
        );
     //--- Symbol
     pdc.font("Helvetica-Oblique", 11)
