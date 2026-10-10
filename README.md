@@ -198,10 +198,10 @@ Utilize read-only properties representing the most recently configured or calcul
 
 - `pdc.$W`: Page width
 - `pdc.$H`: Page height
-- `pdc.$x`, `pdc.$y`: Last X, Y coordinates
-- `pdc.$f`: Last font size
-- `pdc.$a`: Last anchor value
-- `pdc.$s`: Last string rendered
+- `pdc.$x`, `pdc.$y`: Last specified X, Y coordinates
+- `pdc.$f`: Last specified font size
+- `pdc.$a`: Last specified anchor value
+- `pdc.$s`: Last specified string
 
 ```javascript
 // Example: Drawing text at top-left header position
