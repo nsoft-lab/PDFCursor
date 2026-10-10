@@ -67,8 +67,8 @@ PDFCursor maintains internal state variables representing the most recently appl
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
-| `pdc.$W` | `number` | Last specified page width in points. |
-| `pdc.$H` | `number` | Last specified page height in points. |
+| `pdc.$W` | `number` | Page width in points. |
+| `pdc.$H` | `number` | Page height in points. |
 | `pdc.$x` | `number` | Last specified $x$ coordinate in points. |
 | `pdc.$y` | `number` | Last specified $y$ coordinate in points. |
 | `pdc.$f` | `number` | Last specified font size in points. |
