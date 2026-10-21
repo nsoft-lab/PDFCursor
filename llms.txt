@@ -1,0 +1,71 @@
+# PDFCursor
+
+> Lightweight WASM-Powered Client-Side PDF Generation Library for JavaScript & TypeScript.
+
+PDFCursor is an ultra-lightweight, zero-dependency, client-side PDF generation engine compiled from C++ to WebAssembly (emsdk). It generates PDF 1.7 compliant binary streams directly in the browser with real-dimension point coordinates, standard Base14 fonts, CJK CID fonts, vector graphics, 1D/2D barcodes, digital signatures, image embedding, and gradient shading.
+
+## Main Documentation
+
+- [README.md](README.md): Project overview, core features, quick start, and license terms.
+- [API Reference](API.md): Complete technical specification of `PDFCursor` class methods, parameters, and TypeScript interfaces.
+- [Practical Guide & Recipes](GUIDE.md): Production-ready code examples for data tables, barcodes, watermarks, digital signatures, headers/footers, and text measurement.
+- [Limitations & Caveats](LIMITATIONS.md): Constraints on font embedding, PDF 1.7 compliance, graphics state rules, and browser PDF viewers.
+
+## Quick Start Example (JavaScript ES Modules)
+
+```html
+<script type="module">
+import Module from './pdfCursor.mjs';
+
+async function generatePDF() {
+  const mod = await Module();
+  const pdc = new mod.PDFCursor();
+
+  pdc.beginPage("A4 landscape", { title: "Sample Document" })
+     .font("Helvetica", 16)
+     .textAt(100, 100, "Hello, World!")
+     .endPage();
+
+  const pdfBlob = pdc.getBlob();
+  const pdfUrl = URL.createObjectURL(pdfBlob);
+  document.getElementById("viewer").data = pdfUrl;
+}
+
+generatePDF();
+</script>
+```
+
+## TypeScript Usage
+
+```typescript
+import Module from './pdfCursor.mjs';
+import type { PDFCursor, PaperFormat, StandardFont } from './pdfCursor';
+
+async function generatePDF(): Promise<void> {
+  const mod = await Module();
+  const pdc: PDFCursor = new mod.PDFCursor();
+
+  pdc.beginPage('A4', { title: 'TypeScript Sample' })
+     .font('Gothic-JP-H', 12)
+     .textAt(50, 750, 'PDFCursor Document')
+     .endPage();
+
+  const pdfBlob: Blob = pdc.getBlob();
+}
+```
+
+## Key Technical Specifications
+
+- **Coordinate System**: Origin at bottom-left corner (0, 0), unit in points (1 pt = 1/72 inch ≈ 0.3528 mm), precision up to 0.01 pt.
+- **Supported Fonts**: Standard PDF Base14 fonts (Helvetica, Times-Roman, Courier, Symbol, ZapfDingbats) and CJK CID fonts (Mincho & Gothic for JP, TW, KR, CN). Custom TTF/OTF embedding is omitted by design to maintain minimal WASM binary footprint.
+- **Barcodes**: Native vector generators for 1D (Code128, EAN13, JAN8, ITF) and 2D (QR, QRH, DataMatrix) barcodes.
+- **Graphics & Utilities**: Path geometry, clipping (`beginClip`/`endClip`), gradient shading (`shadeRef`/`shadeAt`), PNG/JPEG images with soft-mask alpha transparency, SHA-256 digest (`digest()`), and PKCS#7 digital signature embedding (`digiSign()`).
+- **Read-Only State Properties**: `$W` (page width), `$H` (page height), `$x`, `$y` (last coordinates), `$f` (last font size), `$a` (last anchor), `$s` (last text string).
+
+## Optional Resources
+
+- [Japanese README](README.ja.md): 日本語版概要・クイックスタート
+- [Japanese API Reference](API.ja.md): 日本語版 API リファレンス
+- [Japanese Practical Guide](GUIDE.ja.md): 日本語版 レシピ集
+- [Japanese Limitations](LIMITATIONS.ja.md): 日本語版 制限事項・注意事項
+- [TypeScript Definitions](pdfCursor.d.mts): Bundled type declarations
