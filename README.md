@@ -225,7 +225,7 @@ By leveraging standard Base14 fonts and CJK CID fonts defined in the PDF 1.7 spe
 
 - **Trial Version (Free)**: All features are fully functional. Generated PDFs include a `"Trial Version"` watermark. For evaluation and development testing.
 - **Personal License (One-time purchase)**: Removes the watermark. Valid for 1 production site (includes associated development/staging environments). For individual developers and solo projects.
-- **Team / Enterprise License (One-time purchase)**: Removes the watermark. Valid for 1 production site (includes associated development/staging environments). For business, organization, or team-based development.
+- **Team / Organization License (One-time purchase)**: Removes the watermark. Valid for 1 production site (includes associated development/staging environments). For business, organization, or team-based development.
 
 ### License Scope & Terms
 
