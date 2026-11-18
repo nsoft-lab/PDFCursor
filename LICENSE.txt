@@ -8,7 +8,7 @@ Copyright (c) 2026 NSoFT Co., Ltd. All rights reserved.
    - Personal License (One-time purchase): Removes the watermark. Valid for 1
      production site (includes associated development/staging environments).
      For individual developers and solo projects.
-   - Team / Enterprise License (One-time purchase): Removes the watermark. Valid
+   - Team / Organization License (One-time purchase): Removes the watermark. Valid
      for 1 production site (includes associated development/staging environments).
      For business, organization, or team-based development.
 
