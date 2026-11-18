@@ -246,7 +246,7 @@ Activate your license key in code:
 ```javascript
 pdc.licenseKey = "YOUR_LICENSE_KEY";
 ```
-Note: License verification is performed entirely client-side (offline) within WebAssembly. No external network requests or online activation calls are ever made.
+> Note: License verification is performed entirely client-side (offline) within WebAssembly. No external network requests or online activation calls are ever made.
 
 ### Copyright
 
