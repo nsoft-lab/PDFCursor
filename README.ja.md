@@ -248,6 +248,11 @@ PDFCursor はすべての機能を無料でお試しいただけます。
 ```javascript
 pdc.licenseKey = "YOUR_LICENSE_KEY";
 ```
+または、サーバー側 Set-Cookie による方法 (読み取り後に自動削除)：
+
+```http
+Set-Cookie: PDFCursor.licenseKey=YOUR_LICENSE_KEY; Path=/
+```
 > 注記: ライセンスキーの検証は WebAssembly 内で完全オフライン（クライアントサイド）で行われます。外部サーバーへの接続やオンライン認証通信は一切発生しません。
 
 ### 著作権表記 (Copyright)
