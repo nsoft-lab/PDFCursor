@@ -246,6 +246,11 @@ Activate your license key in code:
 ```javascript
 pdc.licenseKey = "YOUR_LICENSE_KEY";
 ```
+Or set it via a server response header (cleared after reading):
+
+```http
+Set-Cookie: PDFCursor.licenseKey=YOUR_LICENSE_KEY; Path=/
+```
 > Note: License verification is performed entirely client-side (offline) within WebAssembly. No external network requests or online activation calls are ever made.
 
 ### Copyright
