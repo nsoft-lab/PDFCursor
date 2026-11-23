@@ -248,7 +248,7 @@ PDFCursor はすべての機能を無料でお試しいただけます。
 ```javascript
 pdc.licenseKey = "YOUR_LICENSE_KEY";
 ```
-または、サーバー側 Set-Cookie による方法 (読み取り後に自動削除)：
+または、サーバー側 Set-Cookie による方法 (読み取り後に削除)：
 
 ```http
 Set-Cookie: PDFCursor.licenseKey=YOUR_LICENSE_KEY; Path=/
