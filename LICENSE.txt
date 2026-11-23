@@ -20,6 +20,8 @@ Copyright (c) 2026 NSoFT Co., Ltd. All rights reserved.
      are included under the same single license.
    - Multiple Production Sites: Deploying PDFCursor on additional production sites
      requires purchasing a separate license for each site.
+   - License Key Use: Do not publish or redistribute your key. Normal client-side
+     use is permitted, and you are not liable for third-party misuse.
 
 3. Disclaimer of Warranty & Limitation of Liability
    - DISCLAIMER OF WARRANTY: THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY
