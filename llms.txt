@@ -59,7 +59,7 @@ async function generatePDF(): Promise<void> {
 
 - **Coordinate System**: Origin at bottom-left corner (0, 0), unit in points (1 pt = 1/72 inch ≈ 0.3528 mm), precision up to 0.01 pt.
 - **Supported Fonts**: Standard PDF Base14 fonts (Helvetica, Times-Roman, Courier, Symbol, ZapfDingbats) and CJK CID fonts (Mincho & Gothic for JP, TW, KR, CN). Custom TTF/OTF embedding is omitted by design to maintain minimal WASM binary footprint.
-- **Barcodes**: Native vector generators for 1D (Code128, EAN13, JAN8, ITF) and 2D (QR, QRH, DataMatrix) barcodes.
+- **Barcodes**: Native vector generators for 1D (Code128, EAN13, JAN8, ITF) and 2D (QR lev.M, QR lev.H, DataMatrix) barcodes.
 - **Graphics & Utilities**: Path geometry, clipping (`beginClip`/`endClip`), gradient shading (`shadeRef`/`shadeAt`), PNG/JPEG images with soft-mask alpha transparency, SHA-256 digest (`digest()`), and PKCS#7 digital signature embedding (`digiSign()`).
 - **Read-Only State Properties**: `$W` (page width), `$H` (page height), `$x`, `$y` (last coordinates), `$f` (last font size), `$a` (last anchor), `$s` (last text string).
 
