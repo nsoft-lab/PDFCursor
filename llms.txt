@@ -10,6 +10,7 @@ PDFCursor is an ultra-lightweight, zero-dependency, client-side PDF generation e
 - [API Reference](API.md): Complete technical specification of `PDFCursor` class methods, parameters, and TypeScript interfaces.
 - [Practical Guide & Recipes](GUIDE.md): Production-ready code examples for data tables, barcodes, watermarks, digital signatures, headers/footers, and text measurement.
 - [Limitations & Caveats](LIMITATIONS.md): Constraints on font embedding, PDF 1.7 compliance, graphics state rules, and browser PDF viewers.
+- [Live Demo](https://nsoft-lab.github.io/PDFCursor/examples/): Browser demo generating a 2-page sample PDF covering all features and showing actual watermark output.
 
 ## Quick Start Example (JavaScript ES Modules)
 
