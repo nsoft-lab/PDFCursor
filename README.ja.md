@@ -74,7 +74,7 @@ PDFCursor には TypeScript 型定義 (`pdfCursor.d.mts`) が同梱されてい�
 
 ```typescript
 import Module from './pdfCursor.mjs';
-import type { PDFCursor, PaperFormat, StandardFont } from './pdfCursor.mjs';
+import type { PDFCursor } from './pdfCursor.mjs';
 
 async function generatePDF(): Promise<void> {
   const mod = await Module();
