@@ -74,7 +74,7 @@ PDFCursor includes bundled TypeScript declarations (`pdfCursor.d.mts`), providin
 
 ```typescript
 import Module from './pdfCursor.mjs';
-import type { PDFCursor, PaperFormat, StandardFont } from './pdfCursor.mjs';
+import type { PDFCursor } from './pdfCursor.mjs';
 
 async function generatePDF(): Promise<void> {
   const mod = await Module();
