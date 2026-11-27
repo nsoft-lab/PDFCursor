@@ -235,11 +235,11 @@ By leveraging standard Base14 fonts and CJK CID fonts defined in the PDF 1.7 spe
 
 ### How to Purchase & Activate
 
-Commercial license purchasing will be available soon :
+Commercial licenses are available now:
 
-👉 **PDFCursor Commercial License (Coming Soon)**
+👉 **[Purchase PDFCursor License](https://buy.polar.sh/polar_cl_ZzWM4IGOTY4vOoxDUiNTWOFm7PdPugNVNU7B40tx4rR)** (Personal: $35 / Team: $135 — One-time)
 
-*(During the pre-release period, you can evaluate all features for free using the Trial Version)*
+*(Please evaluate all features using the free Trial Version before purchasing.)*
 
 Activate your license key in code:
 
