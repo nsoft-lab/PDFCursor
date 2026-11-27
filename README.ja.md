@@ -237,11 +237,11 @@ PDFCursor はすべての機能を無料でお試しいただけます。
 
 ### 購入とアクティベーション (How to Purchase)
 
-商用ライセンスキーの販売は現在準備中です：
+商用ライセンスキーの販売を開始しました：
 
-👉 **PDFCursor ライセンス（準備中 / Coming Soon）**
+👉 **[PDFCursor ライセンスを購入する](https://buy.polar.sh/polar_cl_ZzWM4IGOTY4vOoxDUiNTWOFm7PdPugNVNU7B40tx4rR)**（Personal: $35 / Team: $135 — 買い切り）
 
-*(※販売開始までは、Trial Version として全機能を無料でお試しいただけます)*
+*(※ご購入前に、無料の Trial Version ですべての機能・動作をご確認ください)*
 
 コード内でのライセンスキー適用方法：
 
